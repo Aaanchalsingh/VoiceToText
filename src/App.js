@@ -1,22 +1,15 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
+import SpeechToText from './SpeechToText'; // Import the SpeechToText component
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* Remove the logo and other default content */}
+        <h1>Voice-to-Text Recognition Example</h1>
+        <SpeechToText /> {/* Render the SpeechToText component */}
       </header>
     </div>
   );
