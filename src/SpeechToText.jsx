@@ -16,9 +16,9 @@ const SpeechToText = () => {
   };
 
   return (
-    <div>
-      <button onClick={handleListen}>Start Listening</button>
-      <button onClick={stopListening}>Stop Listening</button>
+    <div className='box'>
+      <button className="btn"onClick={handleListen}>Start Listening</button>
+      <button className="glow-on-hover" onClick={stopListening}>Stop Listening</button>
       <p>{transcript}</p>
     </div>
   );
